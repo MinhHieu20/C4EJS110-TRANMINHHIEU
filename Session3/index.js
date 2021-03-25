@@ -159,26 +159,27 @@
     var Items = ['Jeans', 'T-shirf', 'Socks']
     while(true){
          question =prompt('Hi there, Wecome to shop admin panel.What do you want(c,r,u,d)?')
-        if(question == 'e'){
-            alert('This command is not supported');
-        } else if(question == 'r'){
+        if(question == ''){
+            break;
+        } else if(question == 'r'|| question == 'R'){
             for(i in Items){ 
                 console.log(`${Number(i)+1}. ${Items[i]}`)
             }
         }else if(question == 'c'){
-            let newItems = prompt('Enter the name of the new items')
+            let newItems = prompt('Enter the name of the new items');
             Items.push(newItems);
             alert('Done');
         }else if(question == 'u'){
-            let n =prompt('Enter the position you want to update:')
-            Items[n]=prompt('Enter the new name:')
+            let n =prompt('Enter the position you want to update:');
+            Items[n - 1]=prompt('Enter the new name:');
             alert('Done');
         }else if(question == 'd'){
-            let x = prompt('Enter the position you want to delete:')
-            Items.splice(x);
+            let x = prompt('Enter the position you want to delete:');
+            Items.splice(x - 1,1);
             alert('Done'); 
-        }
-    }
+        } else alert('This command is not supported');
+        break;
+    } break;
 }
 
 //bai5
@@ -221,7 +222,7 @@
     alert(`Now my biggest sheep sizes ${max[0]}, let's shave it`); 
 }
     {
-    let search= arr.indexOf(arr.sort((max,value) => Number(value) - Number(max))[0])
+    let search= arr.indexOf(max[0])
     arr[search] = 8
     alert(`After shearing, here is my flock ${arr.join(" ")}`)
 }
@@ -247,7 +248,7 @@
         console.log(`I would get ${sum} * 2$ = ${sum*2} `)
     }
 }
-
+//note Math.max.apply - in ra số lớn nhất trong chuỗi
 //bai10
 {
     let name =String(prompt('Enter a sequence of names'));
