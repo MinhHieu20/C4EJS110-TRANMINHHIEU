@@ -1,0 +1,38 @@
+.content{
+    color: red;
+}
+
+p.profile{
+    color: red;
+    font-size: 24px;
+}
+
+h2{
+    font-size: 24px;
+}
+.profile{
+    background:  #00FF00;
+}
+#file{
+    font-size: 3em;
+    background: wheat;
+}
+
+#into{
+    font-size: 3em;
+    background: wheat;
+}
+
+#div1{
+    color:black;
+}
+  #div2{
+    color:blue;
+}
+
+.tel{
+    color: gold;
+}
+.item span{
+    font-size: 18px;
+}

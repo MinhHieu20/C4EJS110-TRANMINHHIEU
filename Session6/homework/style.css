@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+    line-height: 1.642857;
+    background: #fff;
+    color: black;
+
+}
+li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+ul.support {
+    display: flex;
+}
+.header{
+    background: #fff;
+}
+.support li{
+    padding:16px;
+}
+.information{
+    padding: 0 30px;
+}
+.menu-main{
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.menu-main ul li a{
+    color: black;
+}
+.menu-main li{
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 20px;
+}
+.sub-menu{
+    display: none;
+    position: absolute;
+}
+.menu-main ul{
+  color: black;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.menu-main li{
+    position: relative;
+    font-weight: bold;
+}
+.menu-main li:hover .sub-menu{
+    display: block;
+    background: #fff;
+}
+.menu-main ul li a:hover {
+    color: #ffb535;
+}
+.menu-main li:hover {
+    color: #ffb535;
+}
+.flag{
+    display: inline-block;
+    vertical-align: middle;
+    position: static;
+    margin-right: 20px;
+}
+.flag img{
+        max-height: 80px;
+}
+.menu-main .sub-menu li > a{
+    font-size: 14px;
+    color: #212121;
+    background: #fff;
+    border: 0 none;
+    white-space: nowrap;
+}
+.menu-main .sub-menu > li > a{
+    display: block;
+    font-size: 16px;
+    line-height: 1;
+}
+.menu{
+    position: static;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    top: auto;
+    width: 100%;
+}
+.nav{
+     padding: 0 100px;
+}
+.sub-menu > ul{
+    display: none !important; 
+}
+.sub-menu li{
+    margin-left: 0 !important;
+}
+i.far.fa-clock{
+    color: #ffb535;
+}
+i.fas.fa-phone-alt{
+    color: #ffb535;
+}
+.support li{
+    font-size: 13px;
+}
+#btn-item{
+    color: #484848;
+    border: 0 none;
+    border-radius: 50%;
+    box-shadow: none;
+    font-size: 16px;
+}
+.header-button{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.button-icon{
+    float: none;
+    position: absolute;
+    right: 16%;
+    top: 14%;
+    left: auto;
+    bottom: auto;;
+}
+.footer{
+    background: #000;
+    font-size: 14px;
+    color: #9b9d9f;
+    padding: 72px 0 60px;
+    height: 353px;
+}
+.footer .shop-ft{
+    overflow: hidden;
+    margin-bottom: 30px;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 25%;
+}
+img{
+    max-width: 40%;
+}
+.min{
+    padding: 20px 0;
+}
+.ic{
+    display: table-cell;
+    vertical-align: middle;
+}
+.icon-box1{
+    width: 38px;
+}
+.icon-box2{
+    width: 38px;
+}
+.icon-box3{
+    width: 38px;
+}
+.icon-box4{
+    width: 38px;
+}
+.main-footer{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1170px;
+}
+.descript{
+    width: 80%;
+    padding: 30px 0;
+}
