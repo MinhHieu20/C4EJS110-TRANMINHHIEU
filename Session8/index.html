@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+	<div class="buttons_added">
+		<input type="button" value="-"  id="btnminus">
+		<input class="input-qty" name="" type="number" value="1" id="quantity">
+		<input type="button" value="+" id="btnadd">
+    </div>
+
+    <div class="setTime">
+        <p>Ex2</p>
+        <input type="number" id="seconds" placeholder="seconds">
+        <button id="start" class="time">Start</button>
+        <button id="stop" class="time">Stop</button>
+        <p id="viewTime"></p>
+    </div>
+
+    <div class="randomString">
+        <p>Ex3</p>
+        <div id="reload">
+            <img src="reload.jgp" id="iconreload">
+            <p>Reload</p>
+        </div>
+        <div class="viewString">
+            <p id="quoteText">1312312</p>
+            <p id="quoteAuthor">243242</p>
+        </div>
+    </div>
+
+
+    <div style="display: flex;">
+        <div>
+            <pre>
+    <button class="ex" onclick="ex1()">Exercise 1</button>
+    <button class="ex" onclick="ex3()">Exercise 3</button>
+    <button class="ex" onclick="ex4()">Exercise 4</button>
+    <button class="ex" onclick="ex41()">Exercise 4.1</button>
+    <button class="ex" onclick="ex5()">Exercise 5</button>
+    <button class="ex" onclick="ex6()">Exercise 6</button>
+    <button class="ex" onclick="ex7()">Exercise 7</button>
+    <button class="ex" onclick="ex8()">Exercise 8</button>
+            </pre>
+        </div>
+        <div style="padding: 100px;">
+            <div style="display: flex; margin-bottom: 15px;">
+                <form id="input" style="display: flex;">
+                    <input type="text" placeholder="Enter project" id="project">
+                    <input type="text" placeholder="Enter task" id="task">
+                    <input type="number" placeholder="Time spent" id="timespent">
+                </form>
+                <button id="add_btn">Add</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Task</th>
+                        <th>Time spent</th>
+                    </tr>
+                </thead>
+                <tbody id="ts_tbody">
+                    <tr>
+                        <td>Project Test 1</td>
+                        <td>Task test 1</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
