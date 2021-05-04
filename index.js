@@ -26,10 +26,24 @@
 //     testSay(sayHi);
 //     testSay(sayGoodBye);
 
-    const d = document.getElementById('msg')//read dom
+    // const d = document.getElementById('msg')//read dom
     // d.textContent ='Hi there';//update
     // d.addEventListener('click', () => {
     //     alert('Minh Hieu')
     // });//chieu su kien
-    d.insertAdjacentHTML('beforeend',`
-    <div> Cool </div> `)
+    // d.insertAdjacentHTML('beforeend',`
+    // <div> Cool </div> `)
+    const result = fetch('https://pokeapi.co/api/v2/pokemon/pikachu/');
+    console.log(result);
+    async function load(){
+        const conn = await result;
+        const data = await conn.json();
+        console.log(data.moves[0].move.name);
+        var btn = document.getElementById('btn');
+        for(let i in data.moves[0].move.name){
+            btn.insertAdjacentHTML('beforeend',`${i}`)
+        }
+        // btn.innerHTML = data.moves[0].move.name;
+
+    }
+    load();    

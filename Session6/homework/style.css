@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: 'Varela Round', sans-serif;
@@ -10,38 +11,35 @@ body{
     color: black;
 
 }
+.header{
+    background: #9b9d9f;
+    height: 650px;
+    top: 0;
+}
 li {
     list-style-type: none;
 }
 a{
     text-decoration: none;
 }
-ul.support {
-    display: flex;
-}
-.header{
-    background: #fff;
-}
-.support li{
-    padding:16px;
-}
-.information{
-    padding: 0 30px;
-}
 .menu-main{
     display: inline-block;
     vertical-align: middle;
     float: none;
+    width: 990px;
+}
+.menu.item-button p{
+    text-align: center;
 }
 .menu-main ul li a{
     color: black;
 }
 .menu-main li{
   display: inline-block;
-  width: 120px;
-  height: 40px;
-  line-height: 40px;
-  margin-left: 20px;
+  width: 200px;
+  height: 80px;
+  line-height: 80px;
+  margin-left: 40px;
 }
 .sub-menu{
     display: none;
@@ -74,7 +72,7 @@ ul.support {
     margin-right: 20px;
 }
 .flag img{
-        max-height: 80px;
+        max-height: 100px;
 }
 .menu-main .sub-menu li > a{
     font-size: 14px;
@@ -86,7 +84,6 @@ ul.support {
 .menu-main .sub-menu > li > a{
     display: block;
     font-size: 16px;
-    line-height: 1;
 }
 .menu{
     position: static;
@@ -95,6 +92,7 @@ ul.support {
     right: auto;
     top: auto;
     width: 100%;
+    background: #fff;
 }
 .nav{
      padding: 0 100px;
@@ -114,13 +112,6 @@ i.fas.fa-phone-alt{
 .support li{
     font-size: 13px;
 }
-#btn-item{
-    color: #484848;
-    border: 0 none;
-    border-radius: 50%;
-    box-shadow: none;
-    font-size: 16px;
-}
 .header-button{
     vertical-align: middle;
     margin-right: 10px;
@@ -129,16 +120,29 @@ i.fas.fa-phone-alt{
     float: none;
     position: absolute;
     right: 16%;
-    top: 14%;
+    top: 4%;
     left: auto;
     bottom: auto;;
+}
+.slider{
+    height: 650px;
+    width: 1000px;
+}
+
+
+
+
+
+.content{
+    height: 2000px;
+    margin-top: 120px;
 }
 .footer{
     background: #000;
     font-size: 14px;
     color: #9b9d9f;
     padding: 72px 0 60px;
-    height: 353px;
+    height: 553px;
 }
 .footer .shop-ft{
     overflow: hidden;
@@ -150,7 +154,7 @@ i.fas.fa-phone-alt{
     width: 25%;
 }
 img{
-    max-width: 40%;
+    max-width: 80%;
 }
 .min{
     padding: 20px 0;
